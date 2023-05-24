@@ -48,9 +48,11 @@ Partial Class jollibola
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.pangel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.txtSelectedId = New System.Windows.Forms.TextBox()
         Me.txtSalesNote = New System.Windows.Forms.TextBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.lblCurrentSale = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
@@ -135,8 +137,6 @@ Partial Class jollibola
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnSales = New System.Windows.Forms.Button()
-        Me.txtSelectedId = New System.Windows.Forms.TextBox()
-        Me.Label31 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel8.SuspendLayout()
@@ -465,6 +465,16 @@ Partial Class jollibola
         Me.Panel6.Size = New System.Drawing.Size(909, 623)
         Me.Panel6.TabIndex = 0
         '
+        'txtSelectedId
+        '
+        Me.txtSelectedId.Enabled = False
+        Me.txtSelectedId.Location = New System.Drawing.Point(316, 177)
+        Me.txtSelectedId.Multiline = True
+        Me.txtSelectedId.Name = "txtSelectedId"
+        Me.txtSelectedId.Size = New System.Drawing.Size(37, 33)
+        Me.txtSelectedId.TabIndex = 3
+        Me.txtSelectedId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'txtSalesNote
         '
         Me.txtSalesNote.Location = New System.Drawing.Point(477, 37)
@@ -496,6 +506,16 @@ Partial Class jollibola
         Me.lblCurrentSale.TabIndex = 1
         Me.lblCurrentSale.Text = "00"
         Me.lblCurrentSale.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.Location = New System.Drawing.Point(171, 182)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(131, 25)
+        Me.Label31.TabIndex = 1
+        Me.Label31.Text = "Selected ID:"
         '
         'Label30
         '
@@ -618,7 +638,7 @@ Partial Class jollibola
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button4.Location = New System.Drawing.Point(14, 303)
+        Me.Button4.Location = New System.Drawing.Point(14, 299)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(227, 44)
         Me.Button4.TabIndex = 1
@@ -634,7 +654,7 @@ Partial Class jollibola
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Location = New System.Drawing.Point(14, 359)
+        Me.Button5.Location = New System.Drawing.Point(14, 351)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(227, 44)
         Me.Button5.TabIndex = 1
@@ -1133,7 +1153,7 @@ Partial Class jollibola
         Me.btnAddProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAddProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddProd.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnAddProd.Location = New System.Drawing.Point(14, 415)
+        Me.btnAddProd.Location = New System.Drawing.Point(14, 404)
         Me.btnAddProd.Name = "btnAddProd"
         Me.btnAddProd.Size = New System.Drawing.Size(227, 44)
         Me.btnAddProd.TabIndex = 1
@@ -1411,7 +1431,7 @@ Partial Class jollibola
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackgroundImage = Global.sampleCrud.My.Resources.Resources.jollibee
+        Me.PictureBox1.BackgroundImage = Global.sampleCrud.My.Resources.Resources.New_Project
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(20, 13)
         Me.PictureBox1.Name = "PictureBox1"
@@ -1444,32 +1464,12 @@ Partial Class jollibola
         Me.btnSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSales.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSales.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnSales.Location = New System.Drawing.Point(14, 472)
+        Me.btnSales.Location = New System.Drawing.Point(14, 458)
         Me.btnSales.Name = "btnSales"
         Me.btnSales.Size = New System.Drawing.Size(227, 44)
         Me.btnSales.TabIndex = 1
         Me.btnSales.Text = "SALES"
         Me.btnSales.UseVisualStyleBackColor = False
-        '
-        'txtSelectedId
-        '
-        Me.txtSelectedId.Enabled = False
-        Me.txtSelectedId.Location = New System.Drawing.Point(316, 177)
-        Me.txtSelectedId.Multiline = True
-        Me.txtSelectedId.Name = "txtSelectedId"
-        Me.txtSelectedId.Size = New System.Drawing.Size(37, 33)
-        Me.txtSelectedId.TabIndex = 3
-        Me.txtSelectedId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(171, 182)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(131, 25)
-        Me.Label31.TabIndex = 1
-        Me.Label31.Text = "Selected ID:"
         '
         'jollibola
         '
@@ -1484,11 +1484,11 @@ Partial Class jollibola
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.pangel4)
+        Me.Controls.Add(Me.pangel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.pangel5)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.pangel4)
-        Me.Controls.Add(Me.pangel3)
         Me.Name = "jollibola"
         Me.Panel1.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
